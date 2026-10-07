@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Testimony from "./pages/Testimony";
 import Faq from "./pages/Faq";
 import HomeDetail from "./pages/HomeDetail";
+import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -32,5 +33,9 @@ export const router = createBrowserRouter([
         element: <Faq />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
