@@ -32,10 +32,10 @@ export const router = createBrowserRouter([
         path: "faq",
         element: <Faq />,
       },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
   },
 ]);
