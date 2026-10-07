@@ -9,6 +9,10 @@ import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter([
   {
+    path: "*",
+    element: <NotFound />,
+  },
+  {
     path: "/",
     element: <App />,
     children: [
@@ -31,10 +35,6 @@ export const router = createBrowserRouter([
       {
         path: "faq",
         element: <Faq />,
-      },
-      {
-        path: "*",
-        element: <NotFound />,
       },
     ],
   },
